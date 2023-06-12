@@ -1,5 +1,5 @@
-from app import index
+from app import hs_driver
 
 
-def test_index():
-    assert index() == "Hello World!"
+def test_hs_driver():
+    assert hs_driver() == "Hello World!"

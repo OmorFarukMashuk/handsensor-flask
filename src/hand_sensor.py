@@ -80,11 +80,13 @@ class HandSensor:
 
 
     def print_all_avg(self):
-        print(f'avg of hand heights at diff timestamp: {self.all_avg_values}')
-        # how many data points were taken for that particular time span
-        print(f'timestamp records: {self.ts_records}')
+        # print(f'avg of hand heights at diff timestamp: {self.all_avg_values}')
+        # # how many data points were taken for that particular time span
+        # print(f'timestamp records: {self.ts_records}')
 
-        print(f'final average detail: {self.avg_of_all_avg}')
+        # print(f'final average detail: {self.avg_of_all_avg}')
+
+        return self.all_avg_values, self.ts_records, self.avg_of_all_avg
 
 
     
@@ -130,19 +132,19 @@ class HandSensor:
        
        
        
-if __name__ == "__main__":
-    ts = [0.091, 0.165, 0.223, 0.318, 0.373, 0.429, 0.481, 0.559, 0.638, 0.734]
-    lh = [275, 272, 271, 268, 19, 265, 260, 261, 262, 260]
-    rh = [-100, 201, 202, 210, 222, 220, 199, -100, 195, 189]
+# if __name__ == "__main__":
+#     ts = [0.091, 0.165, 0.223, 0.318, 0.373, 0.429, 0.481, 0.559, 0.638, 0.734]
+#     lh = [275, 272, 271, 268, 19, 265, 260, 261, 262, 260]
+#     rh = [-100, 201, 202, 210, 222, 220, 199, -100, 195, 189]
     
-    h  = HandSensor(ts, lh, rh) 
-    h.avgPressure()
+#     h  = HandSensor(ts, lh, rh) 
+#     h.avgPressure()
     
-    ts = [2.057, 2.114, 2.208, 2.304, 2.338, 2.428, 2.523, 2.595, 2.659, 2.738]
-    lh = [-100, -100, -100, -100, 300, -100, 299, -100, -100, 299]
-    rh = [177, 164, 158, 151, 153, 147, 145, -100, -100, 1]
+#     ts = [2.057, 2.114, 2.208, 2.304, 2.338, 2.428, 2.523, 2.595, 2.659, 2.738]
+#     lh = [-100, -100, -100, -100, 300, -100, 299, -100, -100, 299]
+#     rh = [177, 164, 158, 151, 153, 147, 145, -100, -100, 1]
 
-    h  = HandSensor(ts, lh, rh)
-    h.avgPressure()
+#     h  = HandSensor(ts, lh, rh)
+#     h.avgPressure()
     
-    h.print_all_avg()
+#     h.print_all_avg()
