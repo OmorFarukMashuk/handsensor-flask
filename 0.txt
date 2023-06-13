@@ -1,0 +1,8 @@
+pip3 install flask pytest 
+
+pip3 freeze > requirements.txt
+
+export PYTHONPATH=src
+
+exec ssh-agent zsh
+ 
