@@ -1,0 +1,8 @@
+docker buildx create --use
+docker buildx build --push --platform linux/amd64,linux/arm64 -t ofarmash/python-ci-cd:0.0.1.RELEASE .
+docker container run -d -p 3000:3000 ofarmash/python-ci-cd:0.0.1.RELEASE
+
+docker ps
+
+docker start <docker_name>
+docker stop <docker_name>
