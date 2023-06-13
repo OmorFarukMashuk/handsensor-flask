@@ -24,5 +24,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: ofarmash/python-ci-cd:latest,ofarmash/handsensor-flask:${{ env.GITHUB_SHA }}
+        tags: ofarmash/handsensor-flask:latest,ofarmash/handsensor-flask:${{ env.GITHUB_SHA }}
           
