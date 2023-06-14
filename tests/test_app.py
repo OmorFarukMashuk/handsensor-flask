@@ -1,4 +1,6 @@
-from app import hs_driver
+import sys
+sys.path.append('../api')
+from api.app import hs_driver
 
 
 def test_hs_driver():

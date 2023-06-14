@@ -1,9 +1,7 @@
 from flask import Flask
-from hand_sensor import HandSensor
-import os
-
-
-
+import sys
+sys.path.append('../service')
+from service.hand_sensor import HandSensor
 
 app = Flask(__name__)
 
