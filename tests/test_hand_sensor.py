@@ -1,6 +1,4 @@
 import unittest
-import sys
-sys.path.append('../service')
 from service.hand_sensor import HandSensor
 
 class TestHandSensor(unittest.TestCase):
