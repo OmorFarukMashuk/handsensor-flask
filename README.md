@@ -30,8 +30,7 @@
 ```coverage run --source=src -m pytest -v tests```
   * Get report
 ```coverage report -m```
-  * Exit python virtual environment (need to activate and export ```$PYTHONGPATH=src``` again for re-run)
-```deactivate```
+  * Exit python virtual environment ```deactivate```
 * Docker Set Up (local machine build and run)
   * Install docker engine from https://docs.docker.com/engine/install/ and launch the app.
   * Use ```buildx``` to enable multi platform support ```docker buildx create --use```
