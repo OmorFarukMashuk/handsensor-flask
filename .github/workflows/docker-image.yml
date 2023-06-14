@@ -24,5 +24,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: ofarmash/handsensor-flask:${{ github.number }}_${{ github.sha }}
+        tags: ofarmash/handsensor-flask:${{ github.sha:0:1}}.${{ github.sha:1:2}}.${{ github.sha:2:3}}.${{ github.sha:3:4}}.${{ github.run_number }}
           
